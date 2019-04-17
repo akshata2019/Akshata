@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/cyanDark">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textotp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Otp"
-        android:textColor="@color/white"
+        android:textColor="@color/cyanDark"
         android:textSize="20dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
@@ -24,5 +24,23 @@
         android:ems="5"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textotp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/guide"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/textotp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/enterOtp"
+        android:layout_alignLeft="@+id/textotp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginTop="-33dp"
+        android:src="@drawable/smartphone" />
 
 </RelativeLayout>

@@ -3,14 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" 
     android:layout_height="match_parent"
-    android:background="@color/cyanDark"
+
     android:id="@+id/relativeLayout">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cyanPrimary">
+        android:background="@color/cyanDark">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -26,24 +26,17 @@
 
 
     </android.support.v7.widget.Toolbar>
-    <LinearLayout
-        android:id="@+id/formLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:background="#e0e0e0"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginBottom="100dp">
 
-    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"
+        android:background="@color/cyanDark"
         />
 
 </RelativeLayout>
