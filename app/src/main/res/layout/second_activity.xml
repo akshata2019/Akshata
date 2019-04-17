@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     android:id="@+id/relativeLayout">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/cyanDark">
         <ImageView
+            android:id="@+id/left_arrow"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/left_arrow"
@@ -27,15 +28,120 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="-2dp"
+        android:background="#e0e0e0"
+        android:paddingTop="50dp"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_below="@id/user"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"/>
+
+        <ImageView
+            android:id="@+id/gallary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/picture"
+            android:layout_marginLeft="170dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:layout_below="@id/gallary"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="175dp"/>
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/video"
+            android:layout_marginLeft="290dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/video"
+            android:layout_marginLeft="295dp"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/secondLayout"/>
+    <EditText
+        android:id="@+id/editMailId"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="MailId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/editName"/>
+    <EditText
+        android:id="@+id/editContact"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Contact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/editMailId"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EditLanguage"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editContact"
+        android:layout_alignLeft="@+id/editGender"
+        android:layout_marginLeft="293dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Language" />
+
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editContact"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="Gender" />
+
 
     <Button
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/cyanDark"
         />
 

@@ -8,39 +8,51 @@
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/textotp"
+        android:id="@+id/textMobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Otp"
+        android:text="Enter Mobile Number"
         android:textColor="@color/cyanDark"
         android:textSize="20dp"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/imgGuide"
         android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/enterOtp"
+        android:id="@+id/enterMobileNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="5"
+        android:ems="8"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textotp"/>
+        android:layout_below="@+id/textMobile"/>
 
     <ImageView
+        android:id="@+id/imgGuide"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="100dp"
-        android:src="@drawable/guide"
+        android:layout_above="@id/textotp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/textotp"/>
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/guide" />
 
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_below="@id/enterOtp"
-        android:layout_alignLeft="@+id/textotp"
+        android:layout_below="@id/enterMobileNumber"
+        android:layout_alignLeft="@+id/enterMobileNumber"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="-35dp"
-        android:layout_marginTop="-33dp"
+        android:layout_marginLeft="-38dp"
+        android:layout_marginTop="-32dp"
         android:src="@drawable/smartphone" />
+
+    <Button
+        android:id="@+id/btnGetOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterMobileNumber"
+        android:background="@color/cyanDark"
+        android:layout_centerHorizontal="true"
+        android:text="Get Otp"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
