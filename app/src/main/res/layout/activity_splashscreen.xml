@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/linearLayout"
+    android:alpha="2.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/titalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tour Guid"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="cursive"/>
+</LinearLayout>
