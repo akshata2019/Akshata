@@ -7,5 +7,7 @@
     <color name="cyanSecondry">#80deea</color>
     <color name="cyanLight">#5ddef4</color>
     <color name="cyanDark">#007c91</color>
+    <color name="white">#ffffff</color>
+
 
 </resources>
