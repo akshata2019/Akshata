@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.toolbar.MainActivity" >
+
+    <item android:id="@+id/left_arrow"
+        android:icon="@drawable/left_arrow"
+        android:title="Go Back"
+        android:orderInCategory="1"
+        android:menuCategory="secondary"/>
+
+
+
+</menu>
