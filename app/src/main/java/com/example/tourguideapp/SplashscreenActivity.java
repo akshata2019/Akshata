@@ -19,7 +19,7 @@ public class SplashscreenActivity extends Activity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
-                Intent mainIntent = new Intent(SplashscreenActivity.this,MainActivity.class);
+                Intent mainIntent = new Intent(SplashscreenActivity.this, LoginActivity.class);
                 SplashscreenActivity.this.startActivity(mainIntent);
                 SplashscreenActivity.this.finish();
             }

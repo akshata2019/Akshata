@@ -1,6 +1,5 @@
 package com.example.tourguideapp;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,21 +10,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class SecondActivity extends Activity{
+public class ProfileActivity extends Activity{
     ImageView leftArrowImage;
     Button nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_activity);
+        setContentView(R.layout.activity_profile);
        Toolbar toolbar =  findViewById(R.id.toolbar);
        leftArrowImage=findViewById(R.id.left_arrow);
        nextButton=findViewById(R.id.nextButton);
        leftArrowImage.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent i=new Intent(SecondActivity.this,MainActivity.class);
+               Intent i=new Intent(ProfileActivity.this, LoginActivity.class);
                startActivity(i);
            }
        });
@@ -33,7 +32,7 @@ public class SecondActivity extends Activity{
        nextButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent i =new Intent(SecondActivity.this,ThirdActivity.class);
+               Intent i =new Intent(ProfileActivity.this, DetailProfileActivity.class);
                startActivity(i);
            }
        });
